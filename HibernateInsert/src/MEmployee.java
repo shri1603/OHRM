@@ -19,9 +19,13 @@ public class MEmployee {
       
       Updatedata objdataupdate=new Updatedata();
       
+      Deletion objdatadelete=new Deletion();
+      
       objdatainsert.addEmployee("test123113","tt1603", 3312354, factory);    
       objdataretrieve.retrieve(factory);
       objdataupdate.updateData("Abbas","s1603");
+      objdatadelete.delete("s1603");
+      
       
    }
  
