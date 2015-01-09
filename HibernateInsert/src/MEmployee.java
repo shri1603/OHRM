@@ -17,8 +17,12 @@ public class MEmployee {
       
       Retrievedata objdataretrieve= new Retrievedata();
       
-      objdatainsert.addEmployee("Shridhar","s1603", 12354, factory);    
-      objdataretrieve.retrieve();        
+      Updatedata objdataupdate=new Updatedata();
+      
+      objdatainsert.addEmployee("test123113","tt1603", 3312354, factory);    
+      objdataretrieve.retrieve(factory);
+      objdataupdate.updateData("Abbas","s1603");
+      
    }
  
 }

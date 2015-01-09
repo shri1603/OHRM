@@ -1,26 +1,32 @@
-import org.hibernate.Query;
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.Transaction;
+
 
 public class Retrievedata {
 
-	public static void retrieve() {
-		@SuppressWarnings("deprecation")
-		AnnotationConfiguration config = new AnnotationConfiguration();
-		config.addAnnotatedClass(Timesheet.class);
-		SessionFactory factory = config.configure("hibernate.cfg.xml")
-				.buildSessionFactory();
-		Session session = factory.getCurrentSession();
-		session.beginTransaction();
-		Query queryResult = session.createQuery("from timesheet");
-		java.util.List allUsers;
-		allUsers = queryResult.list();
-		for (int i = 0; i < allUsers.size(); i++) {
-			Timesheet user = (Timesheet) allUsers.get(i);
-			System.out.println(user.toString());
-		}
-		System.out.println("Database contents delivered...");
+	public void retrieve(SessionFactory factory) {
+		Session session = factory.openSession();
+	      Transaction tx = null;
+	      try{
+	         tx = session.beginTransaction();
+	         List employees = session.createQuery("from Timesheet").list(); 
+	         for (Iterator iterator = 
+	                           employees.iterator(); iterator.hasNext();){
+	            Timesheet employee = (Timesheet) iterator.next(); 
+	            System.out.print( employee.toString()); 
+	           
+	         }
+	         tx.commit();
+	      }catch (HibernateException e) {
+	         if (tx!=null) tx.rollback();
+	         e.printStackTrace(); 
+	      }finally {
+	         session.close(); 
+	      }
 	}
-
 }

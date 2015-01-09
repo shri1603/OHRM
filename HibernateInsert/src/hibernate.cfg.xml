@@ -13,7 +13,7 @@
   <!-- Echo all executed SQL to stdout -->
   <property name="show_sql">true</property>
   <!-- Drop and re-create the database schema on startup -->
-  <property name="org.hibernate.hbm2ddl"></property>
+  <property name="org.hibernate.hbm2ddl">update</property>
  
   <mapping resource="Timesheet.hbm.xml"/>
  </session-factory>
