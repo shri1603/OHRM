@@ -1,0 +1,4 @@
+1)Install Postgress sql
+https://wiki.postgresql.org/wiki/YUM_Installation
+2)Steps after installation
+https://wiki.postgresql.org/wiki/First_steps
