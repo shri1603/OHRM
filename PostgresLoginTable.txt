@@ -1,0 +1,17 @@
+-- Table: login
+
+-- DROP TABLE login;
+
+CREATE TABLE login
+(
+  username character varying(100),
+  password character varying(100),
+  id integer
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE login
+  OWNER TO root;
+GRANT ALL ON TABLE login TO root;
+GRANT ALL ON TABLE login TO public;
