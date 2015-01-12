@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+    
+<dwr>
+	<allow>
+		<convert converter="bean" match="com.csid.sms.util.ccsv2.dto.ServiceDTO"></convert>
+		<convert converter="bean" match="com.csid.sms.util.cache.vo.CreditUnionVO"></convert>
+		<create creator="new" javascript="Filter">
+			<param name="class" value="itm.manager.DWRManager"></param>
+			<include method="fetchServices" />
+			<include method="checkForBundleMapping" />			
+			<include method="fetchCreditUnionsByAuthType" />
+		</create>
+	</allow>
+</dwr>
