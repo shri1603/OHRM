@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- JDBC connection pool (use the built-in) -->
+		<property name="connection.pool_size">100</property>
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">ohrmowner</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://192.168.2.114:5432/openHRM</property>
+        <property name="hibernate.connection.username">ohrm_owner</property>
+        <property name="hibernate.default_schema">public</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        
+        <mapping resource="com/openHRM/mapping/BranchDetails.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/BranchTimings.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/EmployeeActualHours.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/EmployeeBranchAssocs.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/EmployeeContractedHours.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/Employees.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/GroupDetails.hbm.xml" />
+        <mapping resource="com/openHRM/mapping/LoginPojo.hbm.xml" />
+        
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 10, 2015 4:58:28 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.openHRM.pojo.Employees" table="ohrm_employees">
+        <id name="id" column="id">
+            <generator class="sequence">
+            	<param name="sequence">ohrm_employees_id_seq</param>
+            </generator>
+        </id>
+        <property name="employeeId" type="java.lang.String">
+            <column name="employee_id" />
+        </property>
+        <property name="fristName" type="java.lang.String">
+            <column name="first_name" />
+        </property>
+        <property name="middleName" type="java.lang.String">
+            <column name="middle_name" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="last_name" />
+        </property>
+        <property name="nickName" type="java.lang.String">
+            <column name="nick_name" />
+        </property>
+        <property name="dob" type="java.util.Date">
+            <column name="date_of_birth" />
+        </property>
+        <property name="nationality" type="int">
+            <column name="nationality" />
+        </property>
+        <property name="gender" type="int">
+            <column name="gender" />
+        </property>
+        <property name="maritalStatus" type="int">
+            <column name="marital_status" />
+        </property>
+        <property name="employmentStatus" type="int">
+            <column name="employment_status" />
+        </property>
+        <property name="niNum" type="java.lang.String">
+            <column name="ni_num" />
+        </property>
+        <property name="otherId" type="java.lang.String">
+            <column name="other_id" />
+        </property>
+        <property name="drivingLicenseNum" type="java.lang.String">
+            <column name="driving_license_num" />
+        </property>
+        <property name="drivingLicenseExpDate" type="java.util.Date">
+            <column name="driving_license_exp_date" />
+        </property>
+        <property name="jobTitle" type="int">
+            <column name="job_title" />
+        </property>
+        <property name="salGrdCode" type="int">
+            <column name="sal_grd_code" />
+        </property>
+        <property name="addrLine1" type="java.lang.String">
+            <column name="addr_line1" />
+        </property>
+        <property name="addrLine2" type="java.lang.String">
+            <column name="addr_line2" />
+        </property>
+        <property name="town" type="java.lang.String">
+            <column name="town" />
+        </property>
+        <property name="postCode" type="java.lang.String">
+            <column name="postcode" />
+        </property>
+        <property name="countyCode" type="int">
+            <column name="county_code" />
+        </property>
+        <property name="homePhone" type="java.lang.String">
+            <column name="home_phone" />
+        </property>
+        <property name="mobilePhone" type="java.lang.String">
+            <column name="mobile_phone" />
+        </property>
+        <property name="workPhone" type="java.lang.String">
+            <column name="work_phone" />
+        </property>
+        <property name="workEmail" type="java.lang.String">
+            <column name="work_email" />
+        </property>
+        <property name="privateEmail" type="java.lang.String">
+            <column name="private_email" />
+        </property>
+        <property name="joinedDate" type="java.util.Date">
+            <column name="joined_date" />
+        </property>
+        <property name="confirmationDate" type="java.util.Date">
+            <column name="confirmation_date" />
+        </property>
+        <property name="empMrgId" type="int">
+            <column name="emp_mgr_id" />
+        </property>
+        <property name="deptId" type="int">
+            <column name="dept_id" />
+        </property>
+        <property name="custom1" type="java.lang.String">
+            <column name="custom1" />
+        </property>
+        <property name="custom2" type="java.lang.String">
+            <column name="custom2" />
+        </property>
+        <property name="custom3" type="java.lang.String">
+            <column name="custom3" />
+        </property>
+        <property name="custom4" type="java.lang.String">
+            <column name="custom4" />
+        </property>
+        <property name="custom5" type="java.lang.String">
+            <column name="custom5" />
+        </property>
+        <property name="custom6" type="java.lang.String">
+            <column name="custom6" />
+        </property>
+        <property name="custom7" type="java.lang.String">
+            <column name="custom7" />
+        </property>
+        <property name="custom8" type="java.lang.String">
+            <column name="custom8" />
+        </property>
+        <property name="custom9" type="java.lang.String">
+            <column name="custom9" />
+        </property>
+        <property name="custom10" type="java.lang.String">
+            <column name="custom10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 10, 2015 4:58:28 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.openHRM.pojo.EmployeeActualHours" table="ohrm_employee_actual_hours">
+        <id name="id" column="id">
+            <generator class="sequence">
+            	<param name="sequence">ohrm_employee_actual_hours_id_seq</param>
+            </generator>
+        </id>
+        <property name="empId" type="int">
+            <column name="emp_id" />
+        </property>
+        <property name="branchId" type="int">
+            <column name="branch_id" />
+        </property>
+        <property name="echId" type="int">
+            <column name="ech_id" />
+        </property>
+        <property name="actionDate" type="java.util.Date">
+            <column name="action_date" />
+        </property>
+        <property name="contractedHrs" type="double">
+            <column name="contracted_hrs" />
+        </property>
+        <property name="holidayHrs" type="double">
+            <column name="holiday_hrs" />
+        </property>
+        <property name="sickHrs" type="double">
+            <column name="sick_hrs" />
+        </property>
+        <property name="overtimeHrs" type="double">
+            <column name="overtime_hrs" />
+        </property>
+        <property name="deductionHrs" type="double">
+            <column name="deduction_hrs" />
+        </property>
+        <property name="comments" type="java.lang.String">
+            <column name="comments" />
+        </property>
+        <property name="createdBy" type="java.lang.String">
+            <column name="created_by" />
+        </property>
+        <property name="createdDate" type="java.util.Date">
+            <column name="created_date" />
+        </property>
+        <property name="updatedBy" type="java.lang.String">
+            <column name="updated_by" />
+        </property>
+        <property name="updatedDate" type="java.util.Date">
+            <column name="updated_date" />
+        </property>
+    </class>
+</hibernate-mapping>

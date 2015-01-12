@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 10, 2015 4:58:28 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.openHRM.pojo.BranchDetails" table="ohrm_branch_details">
+        <id name="id" column="id">
+            <generator class="sequence">
+            	<param name="sequence">ohrm_branch_details_id_seq</param>
+            </generator>
+        </id>
+        <property name="internalBranchId" type="java.lang.String">
+            <column name="internal_branch_id" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+        <property name="groupId" type="int">
+            <column name="group_id" />
+        </property>
+        <property name="addrLine1" type="java.lang.String">
+            <column name="addr_line1" />
+        </property>
+        <property name="addrLine2" type="java.lang.String">
+            <column name="addr_line2" />
+        </property>
+        <property name="town" type="java.lang.String">
+            <column name="town" />
+        </property>
+        <property name="postCode" type="java.lang.String">
+            <column name="postcode" />
+        </property>
+        <property name="countyCode" type="int">
+            <column name="county_code" />
+        </property>
+        <property name="telephoneNo" type="java.lang.String">
+            <column name="telephone_no" />
+        </property>
+        <property name="faxNo" type="java.lang.String">
+            <column name="fax_no" />
+        </property>
+        <property name="workingDay" type="int">
+            <column name="working_day" />
+        </property>
+        <property name="isActive" type="boolean" access="field">
+            <column name="is_active" />
+        </property>
+        <property name="notes" type="java.lang.String">
+            <column name="notes" />
+        </property>
+        <property name="startDate" type="java.util.Date">
+            <column name="start_date" />
+        </property>
+        <property name="endDate" type="java.util.Date">
+            <column name="end_date" />
+        </property>
+        <property name="createdBy" type="java.lang.String">
+            <column name="created_by" />
+        </property>
+        <property name="createdDate" type="java.util.Date">
+            <column name="created_date" />
+        </property>
+        <property name="updatedBy" type="java.lang.String">
+            <column name="updated_by" />
+        </property>
+        <property name="updatedDate" type="java.util.Date">
+            <column name="updated_date" />
+        </property>
+    </class>
+</hibernate-mapping>

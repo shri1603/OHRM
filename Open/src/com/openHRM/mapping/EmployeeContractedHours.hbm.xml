@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 10, 2015 4:58:28 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.openHRM.pojo.EmployeeContractedHours" table="ohrm_employee_contracted_hours">
+        <id name="id" column="id">
+            <generator class="sequence">
+            	<param name="sequence">ohrm_employee_contracted_hours_id_seq</param>
+            </generator>
+        </id>
+        <property name="empId" type="int">
+            <column name="emp_id" />
+        </property>
+        <property name="dayNo" type="int">
+            <column name="day_no" />
+        </property>
+        <property name="cateogry" type="java.lang.String">
+            <column name="cateogry" />
+        </property>
+        <property name="startTime" type="java.sql.Timestamp">
+            <column name="start_time" />
+        </property>
+        <property name="endTime" type="java.sql.Timestamp">
+            <column name="end_time" />
+        </property>
+        <property name="lchStartTime" type="java.sql.Timestamp">
+            <column name="lch_start_time" />
+        </property>
+        <property name="lchEndTime" type="java.sql.Timestamp">
+            <column name="lch_end_time" />
+        </property>
+        <property name="startDate" type="java.util.Date">
+            <column name="start_date" />
+        </property>
+        <property name="endDate" type="java.util.Date">
+            <column name="end_date" />
+        </property>
+        <property name="alternateWeek" type="boolean">
+            <column name="alternate_week" />
+        </property>
+        <property name="createdBy" type="java.lang.String">
+            <column name="created_by" />
+        </property>
+        <property name="createdDate" type="java.util.Date">
+            <column name="created_date" />
+        </property>
+        <property name="updatedBy" type="java.lang.String">
+            <column name="updated_by" />
+        </property>
+        <property name="updatedDate" type="java.util.Date">
+            <column name="updated_date" />
+        </property>
+    </class>
+</hibernate-mapping>

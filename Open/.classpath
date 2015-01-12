@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/hibernate-core-4.0.0.CR2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/javassist-3.12.0.GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/postgresql-9.3-1102.jdbc4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shridhar.patel/Documents/GitHub/OHRM/HibernateInsert/lib/slf4j-simple-1.6.6.jar"/>
+	<classpathentry kind="lib" path="D:/Shridhar/Jars/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/Shridhar/Jars/commons-validator-1.4.0-sources.jar/commons-validator-1.4.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Shridhar/Jars/commons-validator-1.3.1.jar/commons-validator-1.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Shridhar/Jars/javax.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

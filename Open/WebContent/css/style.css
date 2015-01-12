@@ -1,0 +1,158 @@
+body{
+background:#FFFFFF;
+margin:9px;
+font: 8pt/14pt 'Lucida Grande', Verdana, Helvetica, sans-serif;
+color:#666666;
+}
+
+A:link{ color:#999999; text-decoration:none; }
+A:hover{ color:#6C8EFF; text-decoration:underline; }
+A:active{ color:#999999; text-decoration:none; }
+A:active:hover{ color:#6C8EFF; text-decoration:underline; }
+A:visited{ color:#999999; text-decoration:none; }
+A:visited:hover{ color:#6C8EFF; text-decoration:underline; }
+
+
+#wrap{
+width:1058px;
+height:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#sidebar{
+margin-left:auto;
+margin-right:auto;
+float:left;
+text-align:right;
+width:20%;
+}
+
+.filterLabBut{
+	
+}
+
+.sidebardiv{
+	
+}
+
+#container{
+width:800px;
+height:100%;
+margin-left:20%;
+border-left:#CCCCCC 1px solid;
+}
+
+#filterSelect{
+width:100%;
+height:10%;
+padding:20px;
+float:left;
+text-align:justify;
+}
+
+#filteredContent{
+width:100%;
+height:70%;
+padding:20px;
+float:left;
+text-align:justify;
+}
+
+#content1{
+width:270px;
+padding:20px;
+float:left;
+text-align:justify;
+}
+
+.content2{
+padding:20px;
+text-align:justify;
+}
+
+h3{
+text-align:right;
+color:#6C8EFF;
+font-size:14pt;
+font-weight:bold;
+}
+
+#title{
+height:120px;
+margin-top:30px;
+border-bottom:#CCCCCC 1px solid;
+text-align:right;
+font-size:10pt;
+letter-spacing:-1px;
+color:#CCCCCC;
+}
+
+#footer{
+text-align:center;
+font-size:10px;
+height:30px;
+margin-top:10px;
+border-top:#CCCCCC 1px solid;
+text-transform:none;
+}
+
+#navlist
+{
+padding: 0 1px 1px;
+margin-left: 0;
+font: bold 12px Verdana, sans-serif;
+background:#F3F3F3;
+width: 13em;
+}
+
+#navlist li
+{
+list-style: none;
+margin: 0;
+border-top:#CCCCCC 1px solid;
+text-align: right;
+}
+
+#navlist li a
+{
+display: block;
+padding: 0.25em 0.5em 0.25em 0.75em;
+background: #F3F3F3;
+text-decoration: none;
+}
+
+#navlist li a:link { color: #6C8EFF; }
+#navlist li a:visited { color: #999999; }
+
+#navlist li a:hover
+{
+border-color: #FE3;
+color: #666666;
+background: #FFFFFF;
+}
+
+.tabuler_form {}
+
+.tabuler_form select,
+.tabuler_form textarea,
+.tabuler_form input[type="text"],
+.tabuler_form input[type="password"],
+.tabuler_form input[type="datetime"],
+.tabuler_form input[type="datetime-local"],
+.tabuler_form input[type="date"],
+.tabuler_form input[type="month"],
+.tabuler_form input[type="time"],
+.tabuler_form input[type="week"],
+.tabuler_form input[type="number"],
+.tabuler_form input[type="email"],
+.tabuler_form input[type="url"],
+.tabuler_form input[type="search"],
+.tabuler_form input[type="tel"],
+.tabuler_form input[type="color"],
+.tabuler_form .uneditable-input { margin-bottom:0;}
+
+.tabuler_form input[type="radio"],
+.tabuler_form input[type="checkbox"] {
+ /*  margin-top:0; */
+}
